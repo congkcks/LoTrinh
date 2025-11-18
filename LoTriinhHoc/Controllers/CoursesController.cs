@@ -30,7 +30,6 @@ public class CoursesController : ControllerBase
         return Ok(courses);
     }
 
-    // ✅ Lấy chi tiết một khóa học → Modules → Lessons
     [HttpGet("{id}")]
     public async Task<IActionResult> GetCourseDetail(int id)
     {

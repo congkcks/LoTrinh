@@ -15,7 +15,6 @@ public class LessonsController : ControllerBase
         _context = context;
     }
 
-    // lay chi tiet co
 
     [HttpGet("{id}")]
     public async Task<IActionResult> GetLessonDetail(int id)
@@ -35,7 +34,6 @@ public class LessonsController : ControllerBase
             })
             .ToListAsync();
 
-        // ✅ Lấy ExerciseTypes + Exercises như trước
         var exerciseTypes = await _context.ExerciseTypes
             .Include(t => t.Exercises)
             .Where(t => t.LessonId == id)

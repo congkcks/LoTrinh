@@ -137,3 +137,4 @@ C:\Users\ACER\source\repos\LoTriinhHoc\LoTriinhHoc\obj\Debug\net8.0\refint\LoTri
 C:\Users\ACER\source\repos\LoTriinhHoc\LoTriinhHoc\obj\Debug\net8.0\LoTriinhHoc.pdb
 C:\Users\ACER\source\repos\LoTriinhHoc\LoTriinhHoc\obj\Debug\net8.0\LoTriinhHoc.genruntimeconfig.cache
 C:\Users\ACER\source\repos\LoTriinhHoc\LoTriinhHoc\obj\Debug\net8.0\ref\LoTriinhHoc.dll
+C:\Users\ACER\source\repos\LoTriinhHoc\LoTriinhHoc\obj\Debug\net8.0\LoTriinhHoc.sourcelink.json
