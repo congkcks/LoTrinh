@@ -21,7 +21,7 @@ public class UserLessonController : ControllerBase
             .FirstOrDefaultAsync(x => x.UserId == userId && x.LessonId == lessonId);
 
         if (item == null)
-            return Ok(null); // chưa có tiến độ
+            return Ok(null);
 
         return Ok(item);
     }

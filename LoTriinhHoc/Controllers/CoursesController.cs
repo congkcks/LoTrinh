@@ -15,7 +15,6 @@ public class CoursesController : ControllerBase
         _context = context;
     }
 
-    // ✅ Lấy danh sách tất cả khóa học
     [HttpGet]
     public async Task<IActionResult> GetAllCourses()
     {
@@ -36,14 +35,12 @@ public class CoursesController : ControllerBase
         var course = await _context.Courses.FirstOrDefaultAsync(c => c.Id == id);
         if (course == null) return NotFound();
 
-        // Lấy các module thuộc khóa học
         var modules = await _context.Modules
             .Where(m => m.CourseId == id)
             .Select(m => new
             {
                 m.Id,
                 m.Name,
-                // Lấy luôn các lessons thuộc module
                 Lessons = _context.Lessons
                     .Where(l => l.ModuleId == m.Id)
                     .Select(l => new

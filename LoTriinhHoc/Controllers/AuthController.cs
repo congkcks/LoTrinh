@@ -18,11 +18,9 @@ public class AuthController : ControllerBase
     [HttpPost("register")]
     public async Task<IActionResult> Register(RegisterRequest request)
     {
-        // Kiểm tra username tồn tại
         if (await _db.Users.AnyAsync(x => x.Username == request.Username))
             return BadRequest("Username already exists.");
 
-        // Lưu trực tiếp password (DEMO)
         var user = new User
         {
             Username = request.Username,

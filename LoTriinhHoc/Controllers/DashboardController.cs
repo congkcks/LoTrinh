@@ -1,15 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using LoTriinhHoc.Data;
-
-
 [ApiController]
 [Route("api/dashboard")]
 public class DashboardController : ControllerBase
 {
     private readonly LotrinhhocDbContext _db;
     private readonly IHttpClientFactory _clientFactory;
-
     public DashboardController(LotrinhhocDbContext db, IHttpClientFactory clientFactory)
     {
         _db = db;
@@ -19,7 +16,6 @@ public class DashboardController : ControllerBase
     [HttpGet("home/{userId}")]
     public async Task<IActionResult> GetDashboard(int userId)
     {
-        // === 1) DỮ LIỆU SERVICE 1 (LOCAL DB) ===
 
         var totalLessons = await _db.Lessons.CountAsync();
         var completedLessons = await _db.UserLessons.CountAsync(x => x.UserId == userId && x.IsCompleted == true);
@@ -50,8 +46,6 @@ public class DashboardController : ControllerBase
         int notesCount = notesRes.IsSuccessStatusCode
             ? int.Parse(await notesRes.Content.ReadAsStringAsync())
             : 0;
-
-        // 2.3 Highlights count
         var hlRes = await client.GetAsync($"api/user-highlights/count/{userId}");
         int highlightCount = hlRes.IsSuccessStatusCode
             ? int.Parse(await hlRes.Content.ReadAsStringAsync())
@@ -109,4 +103,117 @@ public class DashboardController : ControllerBase
         var res = await client.GetAsync(url);
         return res.IsSuccessStatusCode ? int.Parse(await res.Content.ReadAsStringAsync()) : 0;
     }
+    [HttpGet("courses/{userId}")]
+    public async Task<IActionResult> GetCourses(int userId)
+    {
+        var courses = await _db.Courses
+            .Select(course => new
+            {
+                course.Id,
+                course.Name,
+
+                TotalLessons = course.Modules
+                    .SelectMany(m => m.Lessons)
+                    .Count(),
+
+                CompletedLessons = course.Modules
+                    .SelectMany(m => m.Lessons)
+                    .Count(l => _db.UserLessons
+                        .Any(ul => ul.UserId == userId &&
+                                   ul.LessonId == l.Id &&
+                                   ul.IsCompleted == true))
+            })
+            .ToListAsync();
+
+        var result = courses.Select(c => new
+        {
+            courseId = c.Id,
+            name = c.Name,
+            totalLessons = c.TotalLessons,
+            completedLessons = c.CompletedLessons,
+            progressPercent = c.TotalLessons == 0 ? 0 :
+                (int)(c.CompletedLessons * 100 / c.TotalLessons)
+        });
+
+        return Ok(result);
+    }
+    [HttpGet("course/{courseId}/modules/{userId}")]
+    public async Task<IActionResult> GetModules(int courseId, int userId)
+    {
+        var course = await _db.Courses
+            .Where(c => c.Id == courseId)
+            .Select(c => new
+            {
+                c.Id,
+                c.Name,
+                Modules = c.Modules.Select(m => new
+                {
+                    m.Id,
+                    m.Name,
+
+                    TotalLessons = m.Lessons.Count(),
+
+                    CompletedLessons = m.Lessons.Count(l =>
+                        _db.UserLessons.Any(ul =>
+                            ul.UserId == userId &&
+                            ul.LessonId == l.Id &&
+                            ul.IsCompleted == true))
+                })
+            })
+            .FirstOrDefaultAsync();
+
+        if (course == null)
+            return NotFound();
+
+        var modules = course.Modules.Select(m => new
+        {
+            moduleId = m.Id,
+            name = m.Name,
+            m.TotalLessons,
+            m.CompletedLessons,
+            progressPercent = m.TotalLessons == 0 ? 0 :
+                (int)(m.CompletedLessons * 100 / m.TotalLessons)
+        });
+
+        return Ok(new
+        {
+            courseId = course.Id,
+            course.Name,
+            modules
+        });
+    }
+    [HttpGet("module/{moduleId}/lessons/{userId}")]
+    public async Task<IActionResult> GetModuleLessons(int moduleId, int userId)
+    {
+        var module = await _db.Modules
+            .Where(m => m.Id == moduleId)
+            .Select(m => new
+            {
+                m.Id,
+                m.Name,
+                Lessons = m.Lessons.Select(l => new
+                {
+                    l.Id,
+                    l.Title,
+
+                    IsCompleted = _db.UserLessons.Any(ul =>
+                        ul.UserId == userId &&
+                        ul.LessonId == l.Id &&
+                        ul.IsCompleted == true),
+
+                    ProgressPercent = _db.UserLessons
+                        .Where(ul => ul.UserId == userId && ul.LessonId == l.Id)
+                        .Select(ul => ul.ProgressPercent)
+                        .FirstOrDefault() ?? 0
+                })
+            })
+            .FirstOrDefaultAsync();
+
+        if (module == null)
+            return NotFound();
+
+        return Ok(module);
+    }
+
+
 }
