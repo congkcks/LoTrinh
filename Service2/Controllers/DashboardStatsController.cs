@@ -59,7 +59,7 @@ public class DashboardStatsController : ControllerBase
     [HttpGet("flashcard-mastered/{userId}")]
     public async Task<int> GetFlashcardMastered(int userId)
     {
-        return await _db.UserFlashcardProgresses
+        return await _service2Db.UserFlashcardProgresses
             .CountAsync(x => x.UserId == userId && x.IsMastered == true);
     }
     [HttpGet("summary/{userId}")]

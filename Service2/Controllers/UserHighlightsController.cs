@@ -27,7 +27,8 @@ public class UserHighlightsController : ControllerBase
     [HttpPost("add")]
     public async Task<IActionResult> AddHighlight([FromBody] UserHighlight request)
     {
-        request.CreatedAt = DateTime.UtcNow;
+        request.CreatedAt = DateTime.SpecifyKind(DateTime.Now, DateTimeKind.Unspecified);
+
 
         _db.UserHighlights.Add(request);
         await _db.SaveChangesAsync();

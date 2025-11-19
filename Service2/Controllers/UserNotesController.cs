@@ -14,7 +14,6 @@ public class UserNotesController : ControllerBase
         _db = db;
     }
 
-    // GET notes by userId & lessonId
     [HttpGet("{userId}/{lessonId}")]
     public async Task<IActionResult> GetNotes(int userId, int lessonId)
     {
@@ -25,11 +24,10 @@ public class UserNotesController : ControllerBase
         return Ok(notes);
     }
 
-    // POST add note
     [HttpPost("add")]
     public async Task<IActionResult> AddNote([FromBody] UserNote request)
     {
-        request.CreatedAt = DateTime.UtcNow;
+        request.CreatedAt = DateTime.SpecifyKind(DateTime.Now, DateTimeKind.Unspecified);
 
         _db.UserNotes.Add(request);
         await _db.SaveChangesAsync();

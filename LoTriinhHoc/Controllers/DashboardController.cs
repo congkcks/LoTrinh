@@ -37,23 +37,27 @@ public class DashboardController : ControllerBase
 
         var client = _clientFactory.CreateClient("Service2");
 
-        var vocabRes = await client.GetAsync($"api/user-vocabulary/count/{userId}");
-        int vocabCount = vocabRes.IsSuccessStatusCode
-            ? int.Parse(await vocabRes.Content.ReadAsStringAsync())
-            : 0;
+        
+        
 
-        var notesRes = await client.GetAsync($"api/user-notes/count/{userId}");
+        var notesRes = await client.GetAsync($"api/dashboard-stats/notes/{userId}");
         int notesCount = notesRes.IsSuccessStatusCode
             ? int.Parse(await notesRes.Content.ReadAsStringAsync())
             : 0;
-        var hlRes = await client.GetAsync($"api/user-highlights/count/{userId}");
+        var hlRes = await client.GetAsync($"api/dashboard-stats/highlights/{userId}");
         int highlightCount = hlRes.IsSuccessStatusCode
             ? int.Parse(await hlRes.Content.ReadAsStringAsync())
             : 0;
 
-        var grammarDone = await GetInt(client, $"api/stats/grammar-completed/{userId}");
-        var listeningDone = await GetInt(client, $"api/stats/listening-completed/{userId}");
-        var readingDone = await GetInt(client, $"api/stats/reading-completed/{userId}");
+        var vocabRes = await client.GetAsync($"api/dashboard-stats/vocabulary/{userId}");
+        int vocabCount = vocabRes.IsSuccessStatusCode
+            ? int.Parse(await vocabRes.Content.ReadAsStringAsync())
+            : 0;
+
+        var grammarDone = await GetInt(client, $"api/dashboard-stats/grammar-completed/{userId}");
+        var listeningDone = await GetInt(client, $"api/dashboard-stats/listening-completed/{userId}");
+        var readingDone = await GetInt(client, $"api/dashboard-stats/reading-completed/{userId}");
+
 
         var nextLesson = await _db.Lessons.Where(l => !_db.UserLessons
            .Any(u => u.UserId == userId

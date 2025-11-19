@@ -8,10 +8,10 @@ builder.Services.AddControllers();
 
 builder.Services.AddDbContext<LotrinhhocDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
-builder.Services.AddHttpClient("Service2", c =>
+builder.Services.AddHttpClient("Service2", client =>
 {
-    c.BaseAddress = new Uri("https://localhost:7271/");
-    c.DefaultRequestHeaders.Add("Accept", "application/json");
+    client.BaseAddress = new Uri("https://lotrinh-1.onrender.com/");
+    client.Timeout = TimeSpan.FromSeconds(30);
 });
 
 builder.Services.AddAutoMapper(typeof(MappingProfile));
