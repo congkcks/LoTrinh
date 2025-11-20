@@ -82,4 +82,5 @@ public class ProgressController : ControllerBase
         return await _db.UserFlashcardProgresses
             .CountAsync(x => x.UserId == userId && x.IsMastered == true);
     }
+    
 }
