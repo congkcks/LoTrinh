@@ -43,7 +43,6 @@ public class UserProgressController : ControllerBase
         {
             existing.CompletedAt = DateTime.SpecifyKind(DateTime.UtcNow, DateTimeKind.Unspecified);
         }
-
         await _service2Db.SaveChangesAsync();
 
         return Ok(new
@@ -78,7 +77,7 @@ public class UserProgressController : ControllerBase
 
         if (request.IsCompleted == true)
         {
-            existing.CompletedAt = DateTime.Now;
+            existing.CompletedAt = DateTime.SpecifyKind(DateTime.UtcNow, DateTimeKind.Unspecified);
         }
 
         await _service2Db.SaveChangesAsync();
@@ -115,7 +114,7 @@ public class UserProgressController : ControllerBase
 
         if (request.IsCompleted == true)
         {
-            existing.CompletedAt = DateTime.Now;
+            existing.CompletedAt = DateTime.SpecifyKind(DateTime.UtcNow, DateTimeKind.Unspecified);
         }
 
         await _service2Db.SaveChangesAsync();

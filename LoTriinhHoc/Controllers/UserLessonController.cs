@@ -3,9 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using LoTriinhHoc.Data;
 using LoTriinhHoc.Models;
 using LoTriinhHoc.DTOs;
-
 namespace LoTriinhHoc.Api.Controllers;
-
 [ApiController]
 [Route("api/user-lessons")]
 public class UserLessonController : ControllerBase
@@ -17,7 +15,6 @@ public class UserLessonController : ControllerBase
         _db = db;
     }
 
-    // 🔹 Lấy tiến độ hiện tại của user ở 1 lesson
     [HttpGet("{userId}/{lessonId}")]
     public async Task<IActionResult> GetProgress(int userId, int lessonId)
     {
@@ -35,8 +32,6 @@ public class UserLessonController : ControllerBase
 
         return Ok(progress);
     }
-
-    // 🔹 Khởi tạo tiến độ khi bắt đầu học lesson
     [HttpPost("{userId}/{lessonId}/start")]
     public async Task<IActionResult> StartLesson(int userId, int lessonId)
     {
@@ -44,7 +39,7 @@ public class UserLessonController : ControllerBase
             .FirstOrDefaultAsync(x => x.UserId == userId && x.LessonId == lessonId);
 
         if (existing != null)
-            return Ok(existing); 
+            return Ok(existing);
 
         var newProgress = new UserLesson
         {
@@ -84,7 +79,6 @@ public class UserLessonController : ControllerBase
         });
     }
 
-    // 🔹 Hoàn thành lesson
     [HttpPut("{userId}/{lessonId}/finish")]
     public async Task<IActionResult> FinishLesson(
         int userId,
