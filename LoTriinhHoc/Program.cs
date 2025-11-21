@@ -20,11 +20,11 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowAll", policy =>
     {
         policy
-            .AllowAnyOrigin()   
-            .AllowAnyMethod()   
+            .AllowAnyOrigin()
+            .AllowAnyMethod()
             .AllowAnyHeader();
     });
-})
+});
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 var app = builder.Build();
