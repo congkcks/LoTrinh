@@ -138,3 +138,11 @@ C:\Users\ACER\source\repos\LoTriinhHoc\LoTriinhHoc\obj\Debug\net8.0\LoTriinhHoc.
 C:\Users\ACER\source\repos\LoTriinhHoc\LoTriinhHoc\obj\Debug\net8.0\LoTriinhHoc.genruntimeconfig.cache
 C:\Users\ACER\source\repos\LoTriinhHoc\LoTriinhHoc\obj\Debug\net8.0\ref\LoTriinhHoc.dll
 C:\Users\ACER\source\repos\LoTriinhHoc\LoTriinhHoc\obj\Debug\net8.0\LoTriinhHoc.sourcelink.json
+C:\Users\ACER\source\repos\LoTriinhHoc\LoTriinhHoc\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\ACER\source\repos\LoTriinhHoc\LoTriinhHoc\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\ACER\source\repos\LoTriinhHoc\LoTriinhHoc\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\ACER\source\repos\LoTriinhHoc\LoTriinhHoc\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\ACER\source\repos\LoTriinhHoc\LoTriinhHoc\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\ACER\source\repos\LoTriinhHoc\LoTriinhHoc\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\ACER\source\repos\LoTriinhHoc\LoTriinhHoc\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\ACER\source\repos\LoTriinhHoc\LoTriinhHoc\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

@@ -1,4 +1,5 @@
 ﻿using LoTriinhHoc.Data;
+using LoTriinhHoc.Helper;
 using LoTriinhHoc.Mappings;
 using Microsoft.EntityFrameworkCore;
 
@@ -15,7 +16,7 @@ builder.Services.AddHttpClient("Service2", client =>
 });
 
 builder.Services.AddAutoMapper(typeof(MappingProfile));
-
+builder.Services.AddScoped<JwtService>();
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", policy =>
@@ -26,9 +27,18 @@ builder.Services.AddCors(options =>
             .AllowAnyHeader();
     });
 });
+builder.Services.AddDistributedMemoryCache();
+
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(5);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 var app = builder.Build();
+app.UseSession();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

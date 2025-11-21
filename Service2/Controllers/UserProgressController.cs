@@ -17,20 +17,15 @@ public class UserProgressController : ControllerBase
         _service2Db = service2Db;
         _db = db;
     }
-
-    // ===================== GRAMMAR =====================
-    // FE gọi khi user làm xong 1 bài grammar (hoặc update kết quả)
-    // POST /api/user-progress/grammar
     [HttpPost("grammar")]
     public async Task<IActionResult> SaveGrammarProgress([FromBody] UserGrammarProgress request)
     {
         if (!ModelState.IsValid)
             return BadRequest(ModelState);
-
+ 
         var existing = await _service2Db.UserGrammarProgresses
             .FirstOrDefaultAsync(x => x.UserId == request.UserId &&
                                       x.GrammarExerciseId == request.GrammarExerciseId);
-
         if (existing == null)
         {
             existing = new UserGrammarProgress
@@ -46,8 +41,7 @@ public class UserProgressController : ControllerBase
 
         if (request.IsCompleted == true)
         {
-            // dùng Now để tránh lỗi timestamp without time zone
-            existing.CompletedAt = DateTime.Now;
+            existing.CompletedAt = DateTime.SpecifyKind(DateTime.UtcNow, DateTimeKind.Unspecified);
         }
 
         await _service2Db.SaveChangesAsync();
@@ -138,7 +132,7 @@ public class UserProgressController : ControllerBase
         if (!ModelState.IsValid)
             return BadRequest(ModelState);
 
-        var existing = await _db.UserFlashcardProgresses
+        var existing = await _service2Db.UserFlashcardProgresses
             .FirstOrDefaultAsync(x => x.UserId == request.UserId &&
                                       x.FlashcardId == request.FlashcardId);
 
@@ -155,7 +149,7 @@ public class UserProgressController : ControllerBase
 
         existing.Score = request.Score;
         existing.IsMastered = request.IsMastered;
-        existing.LastReview = DateTime.Now;
+        existing.LastReview = DateTime.SpecifyKind(DateTime.UtcNow, DateTimeKind.Unspecified);
         existing.ReviewCount = (existing.ReviewCount ?? 0) + 1;
 
         await _db.SaveChangesAsync();

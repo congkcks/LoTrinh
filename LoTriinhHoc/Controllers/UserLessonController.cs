@@ -2,7 +2,10 @@
 using Microsoft.EntityFrameworkCore;
 using LoTriinhHoc.Data;
 using LoTriinhHoc.Models;
+using LoTriinhHoc.DTOs;
+
 namespace LoTriinhHoc.Api.Controllers;
+
 [ApiController]
 [Route("api/user-lessons")]
 public class UserLessonController : ControllerBase
@@ -14,87 +17,99 @@ public class UserLessonController : ControllerBase
         _db = db;
     }
 
+    // 🔹 Lấy tiến độ hiện tại của user ở 1 lesson
     [HttpGet("{userId}/{lessonId}")]
     public async Task<IActionResult> GetProgress(int userId, int lessonId)
     {
-        var item = await _db.UserLessons
+        var progress = await _db.UserLessons
+            .Where(x => x.UserId == userId && x.LessonId == lessonId)
+            .Select(x => new
+            {
+                x.UserId,
+                x.LessonId,
+                x.ProgressPercent,
+                x.IsCompleted,
+                x.LastAccess
+            })
+            .FirstOrDefaultAsync();
+
+        return Ok(progress);
+    }
+
+    // 🔹 Khởi tạo tiến độ khi bắt đầu học lesson
+    [HttpPost("{userId}/{lessonId}/start")]
+    public async Task<IActionResult> StartLesson(int userId, int lessonId)
+    {
+        var existing = await _db.UserLessons
             .FirstOrDefaultAsync(x => x.UserId == userId && x.LessonId == lessonId);
 
-        if (item == null)
-            return Ok(null);
+        if (existing != null)
+            return Ok(existing); 
 
-        return Ok(item);
-    }
-
-    [HttpPost("start")]
-    public async Task<IActionResult> StartLesson([FromBody] UserLesson request)
-    {
-        request.LastAccess = DateTime.UtcNow;
-
-        _db.UserLessons.Add(request);
+        var newProgress = new UserLesson
+        {
+            UserId = userId,
+            LessonId = lessonId,
+            ProgressPercent = 0,
+            IsCompleted = true,
+            LastAccess = DateTime.SpecifyKind(DateTime.Now, DateTimeKind.Unspecified)
+        };
+        _db.UserLessons.Add(newProgress);
         await _db.SaveChangesAsync();
-
-        return Ok(new { message = "Lesson started", data = request });
+        return Ok(newProgress);
     }
 
-    [HttpPut("update-progress/{userId}/{lessonId}")]
+    [HttpPut("{userId}/{lessonId}/progress")]
     public async Task<IActionResult> UpdateProgress(
-        int userId, int lessonId, [FromBody] UserLesson request)
+        int userId,
+        int lessonId,
+        [FromBody] UpdateLessonProgressRequest request)
     {
-        var item = await _db.UserLessons
+        var progress = await _db.UserLessons
             .FirstOrDefaultAsync(x => x.UserId == userId && x.LessonId == lessonId);
 
-        if (item == null)
-            return NotFound("Lesson progress not found.");
+        if (progress == null)
+            return NotFound("Progress not found.");
 
-        item.ProgressPercent = request.ProgressPercent;
-        item.LastAccess = DateTime.UtcNow;
-
-        await _db.SaveChangesAsync();
-
-        return Ok(new { message = "Progress updated", data = item });
-    }
-
-    
-    [HttpPut("finish/{userId}/{lessonId}")]
-    public async Task<IActionResult> FinishLesson(
-        int userId, int lessonId, [FromBody] UserLesson request)
-    {
-        var item = await _db.UserLessons
-            .FirstOrDefaultAsync(x => x.UserId == userId && x.LessonId == lessonId);
-
-        if (item == null)
-            return NotFound("Lesson progress not found.");
-
-        item.IsCompleted = true;
-        item.Score = request.Score;
-        item.LastAccess = DateTime.UtcNow;
-
-        await _db.SaveChangesAsync();
-
-        return Ok(new { message = "Lesson completed", data = item });
-    }
-
-    [HttpPut("watch/{userId}/{lessonId}")]
-    public async Task<IActionResult> SaveWatchPosition(
-        int userId, int lessonId,
-        [FromBody] UserLesson request)
-    {
-        var item = await _db.UserLessons
-            .FirstOrDefaultAsync(x => x.UserId == userId && x.LessonId == lessonId);
-
-        if (item == null)
-            return NotFound("Lesson progress not found.");
-
-        item.LastWatchedSecond = request.LastWatchedSecond;
-        item.LastAccess = DateTime.UtcNow;
+        progress.ProgressPercent = request.ProgressPercent;
+        progress.LastAccess = DateTime.SpecifyKind(DateTime.Now, DateTimeKind.Unspecified);
 
         await _db.SaveChangesAsync();
 
         return Ok(new
         {
-            message = "Watch position saved",
-            data = item
+            message = "Progress updated",
+            progress.ProgressPercent,
+            progress.LastAccess
+        });
+    }
+
+    // 🔹 Hoàn thành lesson
+    [HttpPut("{userId}/{lessonId}/finish")]
+    public async Task<IActionResult> FinishLesson(
+        int userId,
+        int lessonId,
+        [FromBody] FinishLessonRequest request)
+    {
+        var progress = await _db.UserLessons
+            .FirstOrDefaultAsync(x => x.UserId == userId && x.LessonId == lessonId);
+
+        if (progress == null)
+            return NotFound("Progress not found.");
+
+        progress.ProgressPercent = 100;
+        progress.IsCompleted = true;
+        progress.Score = request.Score;
+        progress.LastAccess = DateTime.SpecifyKind(DateTime.Now, DateTimeKind.Unspecified);
+
+        await _db.SaveChangesAsync();
+
+        return Ok(new
+        {
+            message = "Lesson completed",
+            progress.ProgressPercent,
+            progress.IsCompleted,
+            progress.Score
         });
     }
 }

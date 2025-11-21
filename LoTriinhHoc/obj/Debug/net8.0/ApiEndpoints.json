@@ -17,6 +17,26 @@
   },
   {
     "ContainingType": "AuthController",
+    "Method": "Logout",
+    "RelativePath": "api/auth/logout",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AuthController",
+    "Method": "Me",
+    "RelativePath": "api/auth/me",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AuthController",
     "Method": "Register",
     "RelativePath": "api/auth/register",
     "HttpMethod": "POST",
@@ -240,7 +260,7 @@
   {
     "ContainingType": "LoTriinhHoc.Api.Controllers.UserLessonController",
     "Method": "FinishLesson",
-    "RelativePath": "api/user-lessons/finish/{userId}/{lessonId}",
+    "RelativePath": "api/user-lessons/{userId}/{lessonId}/finish",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -257,23 +277,7 @@
       },
       {
         "Name": "request",
-        "Type": "LoTriinhHoc.Models.UserLesson",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "LoTriinhHoc.Api.Controllers.UserLessonController",
-    "Method": "StartLesson",
-    "RelativePath": "api/user-lessons/start",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "request",
-        "Type": "LoTriinhHoc.Models.UserLesson",
+        "Type": "LoTriinhHoc.DTOs.FinishLessonRequest",
         "IsRequired": true
       }
     ],
@@ -282,7 +286,7 @@
   {
     "ContainingType": "LoTriinhHoc.Api.Controllers.UserLessonController",
     "Method": "UpdateProgress",
-    "RelativePath": "api/user-lessons/update-progress/{userId}/{lessonId}",
+    "RelativePath": "api/user-lessons/{userId}/{lessonId}/progress",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -299,7 +303,7 @@
       },
       {
         "Name": "request",
-        "Type": "LoTriinhHoc.Models.UserLesson",
+        "Type": "LoTriinhHoc.DTOs.UpdateLessonProgressRequest",
         "IsRequired": true
       }
     ],
@@ -307,9 +311,9 @@
   },
   {
     "ContainingType": "LoTriinhHoc.Api.Controllers.UserLessonController",
-    "Method": "SaveWatchPosition",
-    "RelativePath": "api/user-lessons/watch/{userId}/{lessonId}",
-    "HttpMethod": "PUT",
+    "Method": "StartLesson",
+    "RelativePath": "api/user-lessons/{userId}/{lessonId}/start",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -321,11 +325,6 @@
       {
         "Name": "lessonId",
         "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "request",
-        "Type": "LoTriinhHoc.Models.UserLesson",
         "IsRequired": true
       }
     ],

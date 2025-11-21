@@ -67,6 +67,30 @@
         }
       }
     },
+    "/api/auth/me": {
+      "get": {
+        "tags": [
+          "Auth"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/auth/logout": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Courses": {
       "get": {
         "tags": [
@@ -409,30 +433,31 @@
         }
       }
     },
-    "/api/user-lessons/start": {
+    "/api/user-lessons/{userId}/{lessonId}/start": {
       "post": {
         "tags": [
           "UserLesson"
         ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/UserLesson"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/UserLesson"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/UserLesson"
-              }
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "lessonId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
             }
           }
-        },
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -440,7 +465,7 @@
         }
       }
     },
-    "/api/user-lessons/update-progress/{userId}/{lessonId}": {
+    "/api/user-lessons/{userId}/{lessonId}/progress": {
       "put": {
         "tags": [
           "UserLesson"
@@ -469,17 +494,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/UserLesson"
+                "$ref": "#/components/schemas/UpdateLessonProgressRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/UserLesson"
+                "$ref": "#/components/schemas/UpdateLessonProgressRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/UserLesson"
+                "$ref": "#/components/schemas/UpdateLessonProgressRequest"
               }
             }
           }
@@ -491,7 +516,7 @@
         }
       }
     },
-    "/api/user-lessons/finish/{userId}/{lessonId}": {
+    "/api/user-lessons/{userId}/{lessonId}/finish": {
       "put": {
         "tags": [
           "UserLesson"
@@ -520,68 +545,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/UserLesson"
+                "$ref": "#/components/schemas/FinishLessonRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/UserLesson"
+                "$ref": "#/components/schemas/FinishLessonRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/UserLesson"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/user-lessons/watch/{userId}/{lessonId}": {
-      "put": {
-        "tags": [
-          "UserLesson"
-        ],
-        "parameters": [
-          {
-            "name": "userId",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          },
-          {
-            "name": "lessonId",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/UserLesson"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/UserLesson"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/UserLesson"
+                "$ref": "#/components/schemas/FinishLessonRequest"
               }
             }
           }
@@ -612,6 +586,17 @@
             "items": {
               "$ref": "#/components/schemas/Module"
             },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "FinishLessonRequest": {
+        "type": "object",
+        "properties": {
+          "score": {
+            "type": "number",
+            "format": "double",
             "nullable": true
           }
         },
@@ -763,6 +748,16 @@
           "password": {
             "type": "string",
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateLessonProgressRequest": {
+        "type": "object",
+        "properties": {
+          "progressPercent": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false

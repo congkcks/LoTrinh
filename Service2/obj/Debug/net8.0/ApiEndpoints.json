@@ -410,6 +410,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Service2.Controllers.UserProgressController",
+    "Method": "SaveFlashcardProgress",
+    "RelativePath": "api/user-progress/flashcard",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Service2.Models.UserFlashcardProgress",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ProgressController",
     "Method": "MasterFlashcard",
     "RelativePath": "api/user-progress/flashcard/master",
@@ -450,6 +466,22 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "Service2.Controllers.UserProgressController",
+    "Method": "SaveGrammarProgress",
+    "RelativePath": "api/user-progress/grammar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Service2.Models.UserGrammarProgress",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "ProgressController",
@@ -494,6 +526,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Service2.Controllers.UserProgressController",
+    "Method": "SaveListeningProgress",
+    "RelativePath": "api/user-progress/listening",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Service2.Models.UserListeningProgress",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ProgressController",
     "Method": "GetListeningCompleted",
     "RelativePath": "api/user-progress/listening/completed/{userId}",
@@ -530,6 +578,22 @@
       {
         "Name": "req",
         "Type": "Service2.Models.UserListeningProgress",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Service2.Controllers.UserProgressController",
+    "Method": "SaveReadingProgress",
+    "RelativePath": "api/user-progress/reading",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Service2.Models.UserReadingProgress",
         "IsRequired": true
       }
     ],

@@ -29,17 +29,7 @@ public class DashboardController : ControllerBase
             .OrderByDescending(x => x.LastAccess)
             .Select(x => x.LastAccess)
             .FirstOrDefaultAsync();
-
-        var plans = await _db.LearningPlans
-            .Where(x => x.UserId == userId && x.IsActive == true)
-            .ToListAsync();
-
-
         var client = _clientFactory.CreateClient("Service2");
-
-        
-        
-
         var notesRes = await client.GetAsync($"api/dashboard-stats/notes/{userId}");
         int notesCount = notesRes.IsSuccessStatusCode
             ? int.Parse(await notesRes.Content.ReadAsStringAsync())
@@ -91,8 +81,6 @@ public class DashboardController : ControllerBase
                 notesCount,
                 highlightCount
             },
-
-            plans = plans,
 
             recommendation = nextLesson == null ? null : new
             {

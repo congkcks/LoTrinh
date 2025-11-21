@@ -23,8 +23,6 @@ public class LearningPlanController : ControllerBase
 
         return Ok(plans);
     }
-
-    // POST: tạo plan mới
     [HttpPost("create")]
     public async Task<IActionResult> CreatePlan([FromBody] LearningPlan request)
     {
