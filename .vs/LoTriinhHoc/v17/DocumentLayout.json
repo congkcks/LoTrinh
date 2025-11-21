@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{60D65D3A-11B1-4AAB-A28F-2A852307C081}|LoTriinhHoc\\LoTriinhHoc.csproj|c:\\users\\acer\\source\\repos\\lotriinhhoc\\lotriinhhoc\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60D65D3A-11B1-4AAB-A28F-2A852307C081}|LoTriinhHoc\\LoTriinhHoc.csproj|solutionrelative:lotriinhhoc\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4BFA802D-7714-4673-A56F-58FDCB09D778}|Service2\\Service2.csproj|c:\\users\\acer\\source\\repos\\lotriinhhoc\\service2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BFA802D-7714-4673-A56F-58FDCB09D778}|Service2\\Service2.csproj|solutionrelative:service2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{60D65D3A-11B1-4AAB-A28F-2A852307C081}|LoTriinhHoc\\LoTriinhHoc.csproj|c:\\users\\acer\\source\\repos\\lotriinhhoc\\lotriinhhoc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{60D65D3A-11B1-4AAB-A28F-2A852307C081}|LoTriinhHoc\\LoTriinhHoc.csproj|solutionrelative:lotriinhhoc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BFA802D-7714-4673-A56F-58FDCB09D778}|Service2\\Service2.csproj|c:\\users\\acer\\source\\repos\\lotriinhhoc\\service2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BFA802D-7714-4673-A56F-58FDCB09D778}|Service2\\Service2.csproj|solutionrelative:service2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{60D65D3A-11B1-4AAB-A28F-2A852307C081}|LoTriinhHoc\\LoTriinhHoc.csproj|c:\\users\\acer\\source\\repos\\lotriinhhoc\\lotriinhhoc\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60D65D3A-11B1-4AAB-A28F-2A852307C081}|LoTriinhHoc\\LoTriinhHoc.csproj|solutionrelative:lotriinhhoc\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{60D65D3A-11B1-4AAB-A28F-2A852307C081}|LoTriinhHoc\\LoTriinhHoc.csproj|c:\\users\\acer\\source\\repos\\lotriinhhoc\\lotriinhhoc\\controllers\\userlessoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -194,7 +194,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -218,8 +218,7 @@
               "RelativeToolTip": "LoTriinhHoc\\Controllers\\UserLessonController.cs",
               "ViewState": "AgIAAD4AAAAAAAAAAAA5wCcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T15:11:38.937Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-17T15:11:38.937Z"
             },
             {
               "$type": "Document",
@@ -231,8 +230,7 @@
               "RelativeToolTip": "LoTriinhHoc\\Controllers\\LessonsController.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAADUAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T13:12:16.326Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-17T13:12:16.326Z"
             },
             {
               "$type": "Document",
@@ -244,8 +242,7 @@
               "RelativeToolTip": "LoTriinhHoc\\Controllers\\CoursesController.cs",
               "ViewState": "AgIAACAAAAAAAAAAAAA3wBIAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T12:02:48.122Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T12:02:48.122Z"
             },
             {
               "$type": "Document",
@@ -257,8 +254,7 @@
               "RelativeToolTip": "Service2\\Controllers\\ProgressController.cs",
               "ViewState": "AgIAAEkAAAAAAAAAAADwvx0AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T05:14:19.442Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T05:14:19.442Z"
             },
             {
               "$type": "Document",
@@ -270,8 +266,7 @@
               "RelativeToolTip": "Service2\\Controllers\\UserHighlightsController.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAYwCEAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T04:15:37.355Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-19T04:15:37.355Z"
             },
             {
               "$type": "Document",
@@ -283,31 +278,30 @@
               "RelativeToolTip": "LoTriinhHoc\\Models\\UserLesson.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T15:08:21.762Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-17T15:08:21.762Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\LoTriinhHoc\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "LoTriinhHoc\\Controllers\\AuthController.cs",
               "ToolTip": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\LoTriinhHoc\\Controllers\\AuthController.cs",
               "RelativeToolTip": "LoTriinhHoc\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwCkAAABEAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAADcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-17T13:12:04.086Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\Service2\\Program.cs",
               "RelativeDocumentMoniker": "Service2\\Program.cs",
               "ToolTip": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\Service2\\Program.cs",
               "RelativeToolTip": "Service2\\Program.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-17T15:12:59.486Z",
               "EditorCaption": ""
@@ -320,7 +314,7 @@
               "RelativeDocumentMoniker": "LoTriinhHoc\\Program.cs",
               "ToolTip": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\LoTriinhHoc\\Program.cs",
               "RelativeToolTip": "LoTriinhHoc\\Program.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACgAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAwwCQAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-18T15:33:57.604Z",
               "EditorCaption": ""
@@ -335,8 +329,7 @@
               "RelativeToolTip": "LoTriinhHoc\\DTOs\\FinishLessonRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T07:46:05.606Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-21T07:46:05.606Z"
             },
             {
               "$type": "Document",
@@ -348,8 +341,7 @@
               "RelativeToolTip": "LoTriinhHoc\\Controllers\\DashboardController.cs",
               "ViewState": "AgIAADAAAAAAAAAAAAAYwDcAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T19:50:52.671Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-17T19:50:52.671Z"
             },
             {
               "$type": "Document",
@@ -361,8 +353,7 @@
               "RelativeToolTip": "LoTriinhHoc\\Controllers\\UserController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T11:23:47.757Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T11:23:47.757Z"
             },
             {
               "$type": "Document",
@@ -374,8 +365,7 @@
               "RelativeToolTip": "LoTriinhHoc\\Data\\LotrinhhocDbContext.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAA3wDAAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T04:43:37.372Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T04:43:37.372Z"
             },
             {
               "$type": "Document",
@@ -387,8 +377,7 @@
               "RelativeToolTip": "Service2\\Models\\ListeningPractice.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T11:20:25.587Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-20T11:20:25.587Z"
             },
             {
               "$type": "Document",
@@ -400,8 +389,7 @@
               "RelativeToolTip": "Service2\\Controllers\\VocabularyController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T04:21:46.186Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-19T04:21:46.186Z"
             },
             {
               "$type": "Document",
@@ -413,8 +401,7 @@
               "RelativeToolTip": "LoTriinhHoc\\DTOs\\CourseDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T07:38:29.26Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-21T07:38:29.26Z"
             },
             {
               "$type": "Document",
@@ -426,8 +413,7 @@
               "RelativeToolTip": "LoTriinhHoc\\Models\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T07:44:30.617Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-21T07:44:30.617Z"
             },
             {
               "$type": "Document",
@@ -439,8 +425,7 @@
               "RelativeToolTip": "LoTriinhHoc\\DTOs\\ExerciseDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T07:38:29.986Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-21T07:38:29.986Z"
             },
             {
               "$type": "Document",
@@ -452,8 +437,7 @@
               "RelativeToolTip": "Service2\\Controllers\\UserProgressController.cs",
               "ViewState": "AgIAAHMAAAAAAAAAAAAkwJ0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T11:07:55.432Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-20T11:07:55.432Z"
             },
             {
               "$type": "Document",
@@ -465,8 +449,7 @@
               "RelativeToolTip": "LoTriinhHoc\\Controllers\\LearningPlanController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T20:14:19.821Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-17T20:14:19.821Z"
             },
             {
               "$type": "Document",
@@ -478,8 +461,7 @@
               "RelativeToolTip": "Service2\\Controllers\\ListeningController.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAAwBkAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T10:56:16.301Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-20T10:56:16.301Z"
             },
             {
               "$type": "Document",
@@ -491,8 +473,7 @@
               "RelativeToolTip": "Service2\\Controllers\\GrammarController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T04:46:50.752Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T04:46:50.752Z"
             },
             {
               "$type": "Document",
@@ -504,8 +485,7 @@
               "RelativeToolTip": "Service2\\Controllers\\DashboardStatsController.cs",
               "ViewState": "AgIAADQAAAAAAAAAAAAwwEAAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T05:14:15.089Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T05:14:15.089Z"
             },
             {
               "$type": "Document",

@@ -43,10 +43,6 @@ public class AuthController : ControllerBase
 
         if (user == null || user.PasswordHash != request.Password)
             return Unauthorized("Wrong username or password.");
-
-        HttpContext.Session.SetInt32("UserId", user.Id);
-        HttpContext.Session.SetString("Username", user.Username);
-
         return Ok(new
         {
             message = "Login success",
@@ -57,27 +53,5 @@ public class AuthController : ControllerBase
                 user.Email
             }
         });
-    }
-    [HttpGet("me")]
-    public IActionResult Me()
-    {
-        var userId = HttpContext.Session.GetInt32("UserId");
-
-        if (userId == null)
-            return Unauthorized("Chưa đăng nhập");
-
-        var username = HttpContext.Session.GetString("Username");
-
-        return Ok(new
-        {
-            userId,
-            username
-        });
-    }
-    [HttpPost("logout")]
-    public IActionResult Logout()
-    {
-        HttpContext.Session.Clear();
-        return Ok("Logout success");
     }
 }
