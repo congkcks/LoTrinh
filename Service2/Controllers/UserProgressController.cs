@@ -143,15 +143,16 @@ public class UserProgressController : ControllerBase
                 FlashcardId = request.FlashcardId,
                 ReviewCount = 0
             };
-            _db.UserFlashcardProgresses.Add(existing);
+           _service2Db.UserFlashcardProgresses.Add(existing);
         }
 
         existing.Score = request.Score;
         existing.IsMastered = request.IsMastered;
         existing.LastReview = DateTime.SpecifyKind(DateTime.UtcNow, DateTimeKind.Unspecified);
+
         existing.ReviewCount = (existing.ReviewCount ?? 0) + 1;
 
-        await _db.SaveChangesAsync();
+        await _service2Db.SaveChangesAsync();
 
         return Ok(new
         {

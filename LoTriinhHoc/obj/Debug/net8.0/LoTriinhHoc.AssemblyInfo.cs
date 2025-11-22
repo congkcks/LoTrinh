@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LoTriinhHoc")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+46dafed7969517717119cb776a91253d396abf91")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d022f91ae2dea20c274a62b0cb4269ae347741e1")]
 [assembly: System.Reflection.AssemblyProductAttribute("LoTriinhHoc")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LoTriinhHoc")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

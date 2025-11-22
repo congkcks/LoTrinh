@@ -10,7 +10,7 @@ public class DashboardStatsController : ControllerBase
     private readonly EngAceDbContext _db;
     private readonly Service2DbContext _service2Db;
 
-    public DashboardStatsController(EngAceDbContext db,Service2DbContext service2)
+    public DashboardStatsController(EngAceDbContext db, Service2DbContext service2)
     {
         _db = db;
         _service2Db = service2;
@@ -18,8 +18,8 @@ public class DashboardStatsController : ControllerBase
     [HttpGet("vocabulary/{userId}")]
     public async Task<int> GetVocabularyCount(int userId)
     {
-        return await _db.UserVocabularies
-            .CountAsync(x => x.UserId == userId);
+       return await _service2Db.UserFlashcardProgresses
+            .CountAsync(x => x.UserId == userId && x.IsMastered == true);
     }
     [HttpGet("notes/{userId}")]
     public async Task<int> GetNotesCount(int userId)
