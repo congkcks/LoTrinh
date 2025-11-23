@@ -22,4 +22,5 @@ public class VocabularyController : ControllerBase
 
         return Ok(items);
     }
+
 }

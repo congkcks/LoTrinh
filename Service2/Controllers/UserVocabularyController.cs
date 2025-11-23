@@ -16,14 +16,30 @@ public class UserVocabularyController : ControllerBase
     [HttpGet("{userId}")]
     public async Task<IActionResult> GetByUser(int userId)
     {
-        var vocab = await _db.UserVocabularies
-            .Where(x => x.UserId == userId)
+        var result = await (
+            from uv in _db.UserVocabularies
+            join v in _db.Vocabularies
+                on uv.VocabId equals v.Id
+            where uv.UserId == userId
+            select new
+            {
+                uv.Id,
+                uv.UserId,
+                uv.VocabId,
+                uv.Status,
+                uv.AddedAt,
+                v.LessonId,
+                v.Word,
+                v.Meaning,
+                v.Example,
+                v.Phonetic,
+                v.Level
+            })
             .ToListAsync();
 
-        return Ok(vocab);
+        return Ok(result);
     }
 
-    // ✅ Lấy thông tin từ vựng cụ thể
     [HttpGet("{userId}/{vocabId}")]
     public async Task<IActionResult> GetOne(int userId, int vocabId)
     {
@@ -36,7 +52,6 @@ public class UserVocabularyController : ControllerBase
         return Ok(item);
     }
 
-    // ✅ Thêm từ mới vào danh sách học
     [HttpPost("add")]
     public async Task<IActionResult> AddVocabulary([FromBody] UserVocabulary request)
     {
@@ -73,9 +88,7 @@ public class UserVocabularyController : ControllerBase
                 x.VocabId == vocabId);
 
         if (item == null)
-        {
-            // Nếu chưa có thì tạo mới
-            item = new UserVocabulary
+        {            item = new UserVocabulary
             {
                 UserId = userId,
                 VocabId = vocabId,
@@ -99,7 +112,6 @@ public class UserVocabularyController : ControllerBase
         });
     }
 
-    // ✅ Xóa một từ khỏi danh sách user
     [HttpDelete("{userId}/{vocabId}")]
     public async Task<IActionResult> Remove(int userId, int vocabId)
     {
