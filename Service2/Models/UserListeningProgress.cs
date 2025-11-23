@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-
+﻿
 namespace Service2.Models;
-
 public partial class UserListeningProgress
 {
     public int Id { get; set; }

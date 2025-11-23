@@ -60,8 +60,6 @@ public class UserHighlightsController : ControllerBase
             highlight
         });
     }
-
-    // DELETE highlight
     [HttpDelete("delete/{id}")]
     public async Task<IActionResult> DeleteHighlight(int id)
     {

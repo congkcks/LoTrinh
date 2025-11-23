@@ -642,6 +642,106 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Service2.Controllers.UserVocabularyController",
+    "Method": "GetByUser",
+    "RelativePath": "api/user-vocabulary/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Service2.Controllers.UserVocabularyController",
+    "Method": "GetOne",
+    "RelativePath": "api/user-vocabulary/{userId}/{vocabId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "vocabId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Service2.Controllers.UserVocabularyController",
+    "Method": "Remove",
+    "RelativePath": "api/user-vocabulary/{userId}/{vocabId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "vocabId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Service2.Controllers.UserVocabularyController",
+    "Method": "UpdateStatus",
+    "RelativePath": "api/user-vocabulary/{userId}/{vocabId}/status",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "vocabId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "status",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Service2.Controllers.UserVocabularyController",
+    "Method": "AddVocabulary",
+    "RelativePath": "api/user-vocabulary/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Service2.Models.UserVocabulary",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "VocabularyController",
     "Method": "GetVocabByLesson",
     "RelativePath": "api/vocabulary/{lessonId}",
