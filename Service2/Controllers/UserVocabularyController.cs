@@ -39,6 +39,34 @@ public class UserVocabularyController : ControllerBase
 
         return Ok(result);
     }
+    [HttpGet("{userId}/mastered")]
+    public async Task<IActionResult> GetMasteredByUser(int userId)
+    {
+        var result = await (
+            from uv in _db.UserVocabularies
+            join v in _db.Vocabularies
+                on uv.VocabId equals v.Id
+            where uv.UserId == userId
+                  && uv.Status == "complete"
+            select new
+            {
+                uv.Id,
+                uv.UserId,
+                uv.VocabId,
+                uv.Status,
+                uv.AddedAt,
+                v.LessonId,
+                v.Word,
+                v.Meaning,
+                v.Example,
+                v.Phonetic,
+                v.Level
+            })
+            .ToListAsync();
+
+        return Ok(result);
+    }
+
 
     [HttpGet("{userId}/{vocabId}")]
     public async Task<IActionResult> GetOne(int userId, int vocabId)

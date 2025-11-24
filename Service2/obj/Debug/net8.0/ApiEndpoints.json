@@ -727,6 +727,22 @@
   },
   {
     "ContainingType": "Service2.Controllers.UserVocabularyController",
+    "Method": "GetMasteredByUser",
+    "RelativePath": "api/user-vocabulary/{userId}/mastered",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Service2.Controllers.UserVocabularyController",
     "Method": "AddVocabulary",
     "RelativePath": "api/user-vocabulary/add",
     "HttpMethod": "POST",
