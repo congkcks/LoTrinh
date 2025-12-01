@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{60D65D3A-11B1-4AAB-A28F-2A852307C081}|LoTriinhHoc\\LoTriinhHoc.csproj|c:\\users\\acer\\source\\repos\\lotriinhhoc\\lotriinhhoc\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60D65D3A-11B1-4AAB-A28F-2A852307C081}|LoTriinhHoc\\LoTriinhHoc.csproj|solutionrelative:lotriinhhoc\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60D65D3A-11B1-4AAB-A28F-2A852307C081}|LoTriinhHoc\\LoTriinhHoc.csproj|c:\\users\\acer\\source\\repos\\lotriinhhoc\\lotriinhhoc\\dtos\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60D65D3A-11B1-4AAB-A28F-2A852307C081}|LoTriinhHoc\\LoTriinhHoc.csproj|solutionrelative:lotriinhhoc\\dtos\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60D65D3A-11B1-4AAB-A28F-2A852307C081}|LoTriinhHoc\\LoTriinhHoc.csproj|c:\\users\\acer\\source\\repos\\lotriinhhoc\\lotriinhhoc\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60D65D3A-11B1-4AAB-A28F-2A852307C081}|LoTriinhHoc\\LoTriinhHoc.csproj|solutionrelative:lotriinhhoc\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60D65D3A-11B1-4AAB-A28F-2A852307C081}|LoTriinhHoc\\LoTriinhHoc.csproj|c:\\users\\acer\\source\\repos\\lotriinhhoc\\lotriinhhoc\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60D65D3A-11B1-4AAB-A28F-2A852307C081}|LoTriinhHoc\\LoTriinhHoc.csproj|solutionrelative:lotriinhhoc\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60D65D3A-11B1-4AAB-A28F-2A852307C081}|LoTriinhHoc\\LoTriinhHoc.csproj|c:\\users\\acer\\source\\repos\\lotriinhhoc\\lotriinhhoc\\data\\lotrinhhocdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60D65D3A-11B1-4AAB-A28F-2A852307C081}|LoTriinhHoc\\LoTriinhHoc.csproj|solutionrelative:lotriinhhoc\\data\\lotrinhhocdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4BFA802D-7714-4673-A56F-58FDCB09D778}|Service2\\Service2.csproj|c:\\users\\acer\\source\\repos\\lotriinhhoc\\service2\\controllers\\uservocabularycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4BFA802D-7714-4673-A56F-58FDCB09D778}|Service2\\Service2.csproj|solutionrelative:service2\\controllers\\uservocabularycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -63,16 +83,8 @@
       "RelativeMoniker": "D:0:0:{4BFA802D-7714-4673-A56F-58FDCB09D778}|Service2\\Service2.csproj|solutionrelative:service2\\models\\userhighlight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{60D65D3A-11B1-4AAB-A28F-2A852307C081}|LoTriinhHoc\\LoTriinhHoc.csproj|c:\\users\\acer\\source\\repos\\lotriinhhoc\\lotriinhhoc\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60D65D3A-11B1-4AAB-A28F-2A852307C081}|LoTriinhHoc\\LoTriinhHoc.csproj|solutionrelative:lotriinhhoc\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4BFA802D-7714-4673-A56F-58FDCB09D778}|Service2\\Service2.csproj|c:\\users\\acer\\source\\repos\\lotriinhhoc\\service2\\controllers\\dashboardstatscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4BFA802D-7714-4673-A56F-58FDCB09D778}|Service2\\Service2.csproj|solutionrelative:service2\\controllers\\dashboardstatscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{60D65D3A-11B1-4AAB-A28F-2A852307C081}|LoTriinhHoc\\LoTriinhHoc.csproj|c:\\users\\acer\\source\\repos\\lotriinhhoc\\lotriinhhoc\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60D65D3A-11B1-4AAB-A28F-2A852307C081}|LoTriinhHoc\\LoTriinhHoc.csproj|solutionrelative:lotriinhhoc\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4BFA802D-7714-4673-A56F-58FDCB09D778}|Service2\\Service2.csproj|c:\\users\\acer\\source\\repos\\lotriinhhoc\\service2\\models\\userreadingprogress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -99,10 +111,6 @@
       "RelativeMoniker": "D:0:0:{60D65D3A-11B1-4AAB-A28F-2A852307C081}|LoTriinhHoc\\LoTriinhHoc.csproj|solutionrelative:lotriinhhoc\\controllers\\lessonscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{60D65D3A-11B1-4AAB-A28F-2A852307C081}|LoTriinhHoc\\LoTriinhHoc.csproj|c:\\users\\acer\\source\\repos\\lotriinhhoc\\lotriinhhoc\\data\\lotrinhhocdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60D65D3A-11B1-4AAB-A28F-2A852307C081}|LoTriinhHoc\\LoTriinhHoc.csproj|solutionrelative:lotriinhhoc\\data\\lotrinhhocdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{60D65D3A-11B1-4AAB-A28F-2A852307C081}|LoTriinhHoc\\LoTriinhHoc.csproj|c:\\users\\acer\\source\\repos\\lotriinhhoc\\lotriinhhoc\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{60D65D3A-11B1-4AAB-A28F-2A852307C081}|LoTriinhHoc\\LoTriinhHoc.csproj|solutionrelative:lotriinhhoc\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -125,10 +133,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{60D65D3A-11B1-4AAB-A28F-2A852307C081}|LoTriinhHoc\\LoTriinhHoc.csproj|c:\\users\\acer\\source\\repos\\lotriinhhoc\\lotriinhhoc\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{60D65D3A-11B1-4AAB-A28F-2A852307C081}|LoTriinhHoc\\LoTriinhHoc.csproj|solutionrelative:lotriinhhoc\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{60D65D3A-11B1-4AAB-A28F-2A852307C081}|LoTriinhHoc\\LoTriinhHoc.csproj|c:\\users\\acer\\source\\repos\\lotriinhhoc\\lotriinhhoc\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60D65D3A-11B1-4AAB-A28F-2A852307C081}|LoTriinhHoc\\LoTriinhHoc.csproj|solutionrelative:lotriinhhoc\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{60D65D3A-11B1-4AAB-A28F-2A852307C081}|LoTriinhHoc\\LoTriinhHoc.csproj|c:\\users\\acer\\source\\repos\\lotriinhhoc\\lotriinhhoc\\dtos\\coursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -206,7 +210,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -222,56 +226,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Vocabulary.cs",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\Service2\\Models\\Vocabulary.cs",
-              "RelativeDocumentMoniker": "Service2\\Models\\Vocabulary.cs",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\Service2\\Models\\Vocabulary.cs",
-              "RelativeToolTip": "Service2\\Models\\Vocabulary.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAuwCQAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\LoTriinhHoc\\DTOs\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "LoTriinhHoc\\DTOs\\LoginRequest.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\LoTriinhHoc\\DTOs\\LoginRequest.cs",
+              "RelativeToolTip": "LoTriinhHoc\\DTOs\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T09:15:15.518Z"
+              "WhenOpened": "2025-11-24T09:56:57.981Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "UserVocabularyController.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\Service2\\Controllers\\UserVocabularyController.cs",
               "RelativeDocumentMoniker": "Service2\\Controllers\\UserVocabularyController.cs",
               "ToolTip": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\Service2\\Controllers\\UserVocabularyController.cs",
               "RelativeToolTip": "Service2\\Controllers\\UserVocabularyController.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAAADEAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAAAACkAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T05:15:11.381Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-23T05:15:11.381Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GrammarController.cs",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\Service2\\Controllers\\GrammarController.cs",
-              "RelativeDocumentMoniker": "Service2\\Controllers\\GrammarController.cs",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\Service2\\Controllers\\GrammarController.cs",
-              "RelativeToolTip": "Service2\\Controllers\\GrammarController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T04:46:50.752Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UserProgressController.cs",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\Service2\\Controllers\\UserProgressController.cs",
-              "RelativeDocumentMoniker": "Service2\\Controllers\\UserProgressController.cs",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\Service2\\Controllers\\UserProgressController.cs",
-              "RelativeToolTip": "Service2\\Controllers\\UserProgressController.cs",
-              "ViewState": "AgIAAGQAAAAAAAAAAAAuwHQAAABjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T11:07:55.432Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "UserNotesController.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\Service2\\Controllers\\UserNotesController.cs",
               "RelativeDocumentMoniker": "Service2\\Controllers\\UserNotesController.cs",
@@ -283,7 +262,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "UserHighlightsController.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\Service2\\Controllers\\UserHighlightsController.cs",
               "RelativeDocumentMoniker": "Service2\\Controllers\\UserHighlightsController.cs",
@@ -295,7 +274,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "VocabularyController.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\Service2\\Controllers\\VocabularyController.cs",
               "RelativeDocumentMoniker": "Service2\\Controllers\\VocabularyController.cs",
@@ -307,7 +286,92 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
+              "Title": "LotrinhhocDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\LoTriinhHoc\\Data\\LotrinhhocDbContext.cs",
+              "RelativeDocumentMoniker": "LoTriinhHoc\\Data\\LotrinhhocDbContext.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\LoTriinhHoc\\Data\\LotrinhhocDbContext.cs",
+              "RelativeToolTip": "LoTriinhHoc\\Data\\LotrinhhocDbContext.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACoAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T04:43:37.372Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\LoTriinhHoc\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "LoTriinhHoc\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\LoTriinhHoc\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "LoTriinhHoc\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwCkAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T13:12:04.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\LoTriinhHoc\\Models\\User.cs",
+              "RelativeDocumentMoniker": "LoTriinhHoc\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\LoTriinhHoc\\Models\\User.cs",
+              "RelativeToolTip": "LoTriinhHoc\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T07:44:30.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\LoTriinhHoc\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "LoTriinhHoc\\Controllers\\DashboardController.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\LoTriinhHoc\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "LoTriinhHoc\\Controllers\\DashboardController.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAYwCkAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T19:50:52.671Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserProgressController.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\Service2\\Controllers\\UserProgressController.cs",
+              "RelativeDocumentMoniker": "Service2\\Controllers\\UserProgressController.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\Service2\\Controllers\\UserProgressController.cs",
+              "RelativeToolTip": "Service2\\Controllers\\UserProgressController.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAuwHQAAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T11:07:55.432Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GrammarController.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\Service2\\Controllers\\GrammarController.cs",
+              "RelativeDocumentMoniker": "Service2\\Controllers\\GrammarController.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\Service2\\Controllers\\GrammarController.cs",
+              "RelativeToolTip": "Service2\\Controllers\\GrammarController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T04:46:50.752Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Vocabulary.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\Service2\\Models\\Vocabulary.cs",
+              "RelativeDocumentMoniker": "Service2\\Models\\Vocabulary.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\Service2\\Models\\Vocabulary.cs",
+              "RelativeToolTip": "Service2\\Models\\Vocabulary.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAuwCQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T09:15:15.518Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "UserVocabulary.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\Service2\\Models\\UserVocabulary.cs",
               "RelativeDocumentMoniker": "Service2\\Models\\UserVocabulary.cs",
@@ -319,7 +383,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "ListeningController.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\Service2\\Controllers\\ListeningController.cs",
               "RelativeDocumentMoniker": "Service2\\Controllers\\ListeningController.cs",
@@ -331,7 +395,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "Service2DbContext.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\Service2\\Models\\Service2DbContext.cs",
               "RelativeDocumentMoniker": "Service2\\Models\\Service2DbContext.cs",
@@ -343,7 +407,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "ProgressController.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\Service2\\Controllers\\ProgressController.cs",
               "RelativeDocumentMoniker": "Service2\\Controllers\\ProgressController.cs",
@@ -355,7 +419,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "ReadingController.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\Service2\\Controllers\\ReadingController.cs",
               "RelativeDocumentMoniker": "Service2\\Controllers\\ReadingController.cs",
@@ -367,7 +431,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
               "Title": "UserFlashcardProgress.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\Service2\\Models\\UserFlashcardProgress.cs",
               "RelativeDocumentMoniker": "Service2\\Models\\UserFlashcardProgress.cs",
@@ -379,7 +443,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 18,
               "Title": "UserListeningProgress.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\Service2\\Models\\UserListeningProgress.cs",
               "RelativeDocumentMoniker": "Service2\\Models\\UserListeningProgress.cs",
@@ -391,7 +455,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 19,
               "Title": "UserHighlight.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\Service2\\Models\\UserHighlight.cs",
               "RelativeDocumentMoniker": "Service2\\Models\\UserHighlight.cs",
@@ -403,31 +467,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\LoTriinhHoc\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "LoTriinhHoc\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\LoTriinhHoc\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "LoTriinhHoc\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T13:12:04.086Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "DashboardController.cs",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\LoTriinhHoc\\Controllers\\DashboardController.cs",
-              "RelativeDocumentMoniker": "LoTriinhHoc\\Controllers\\DashboardController.cs",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\LoTriinhHoc\\Controllers\\DashboardController.cs",
-              "RelativeToolTip": "LoTriinhHoc\\Controllers\\DashboardController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAABNAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T19:50:52.671Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "DashboardStatsController.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\Service2\\Controllers\\DashboardStatsController.cs",
               "RelativeDocumentMoniker": "Service2\\Controllers\\DashboardStatsController.cs",
@@ -439,7 +479,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "UserReadingProgress.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\Service2\\Models\\UserReadingProgress.cs",
               "RelativeDocumentMoniker": "Service2\\Models\\UserReadingProgress.cs",
@@ -451,7 +491,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "GrammarExercise.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\Service2\\Models\\GrammarExercise.cs",
               "RelativeDocumentMoniker": "Service2\\Models\\GrammarExercise.cs",
@@ -463,7 +503,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "FinishLessonRequest.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\LoTriinhHoc\\DTOs\\FinishLessonRequest.cs",
               "RelativeDocumentMoniker": "LoTriinhHoc\\DTOs\\FinishLessonRequest.cs",
@@ -475,7 +515,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 26,
               "Title": "LessonsController.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\LoTriinhHoc\\Controllers\\LessonsController.cs",
               "RelativeDocumentMoniker": "LoTriinhHoc\\Controllers\\LessonsController.cs",
@@ -487,19 +527,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "LotrinhhocDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\LoTriinhHoc\\Data\\LotrinhhocDbContext.cs",
-              "RelativeDocumentMoniker": "LoTriinhHoc\\Data\\LotrinhhocDbContext.cs",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\LoTriinhHoc\\Data\\LotrinhhocDbContext.cs",
-              "RelativeToolTip": "LoTriinhHoc\\Data\\LotrinhhocDbContext.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAADAAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T04:43:37.372Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "ListeningPractice.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\Service2\\Models\\ListeningPractice.cs",
               "RelativeDocumentMoniker": "Service2\\Models\\ListeningPractice.cs",
@@ -511,7 +539,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\LoTriinhHoc\\Program.cs",
               "RelativeDocumentMoniker": "LoTriinhHoc\\Program.cs",
@@ -523,7 +551,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\Service2\\Program.cs",
               "RelativeDocumentMoniker": "Service2\\Program.cs",
@@ -535,7 +563,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "UserLessonController.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\LoTriinhHoc\\Controllers\\UserLessonController.cs",
               "RelativeDocumentMoniker": "LoTriinhHoc\\Controllers\\UserLessonController.cs",
@@ -547,7 +575,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\LoTriinhHoc\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "LoTriinhHoc\\Controllers\\UserController.cs",
@@ -559,7 +587,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "LearningPlanController.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\LoTriinhHoc\\Controllers\\LearningPlanController.cs",
               "RelativeDocumentMoniker": "LoTriinhHoc\\Controllers\\LearningPlanController.cs",
@@ -571,7 +599,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "UserLesson.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\LoTriinhHoc\\Models\\UserLesson.cs",
               "RelativeDocumentMoniker": "LoTriinhHoc\\Models\\UserLesson.cs",
@@ -583,7 +611,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "CoursesController.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\LoTriinhHoc\\Controllers\\CoursesController.cs",
               "RelativeDocumentMoniker": "LoTriinhHoc\\Controllers\\CoursesController.cs",
@@ -595,7 +623,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "CourseDto.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\LoTriinhHoc\\DTOs\\CourseDto.cs",
               "RelativeDocumentMoniker": "LoTriinhHoc\\DTOs\\CourseDto.cs",
@@ -607,19 +635,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\LoTriinhHoc\\Models\\User.cs",
-              "RelativeDocumentMoniker": "LoTriinhHoc\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\LoTriinhHoc\\Models\\User.cs",
-              "RelativeToolTip": "LoTriinhHoc\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T07:44:30.617Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "ExerciseDto.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\LoTriinhHoc\\DTOs\\ExerciseDto.cs",
               "RelativeDocumentMoniker": "LoTriinhHoc\\DTOs\\ExerciseDto.cs",
@@ -631,7 +647,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "JwtService.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\LoTriinhHoc\\Helper\\JwtService.cs",
               "RelativeDocumentMoniker": "LoTriinhHoc\\Helper\\JwtService.cs",
@@ -643,7 +659,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "UserGrammarProgress.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\Service2\\Models\\UserGrammarProgress.cs",
               "RelativeDocumentMoniker": "Service2\\Models\\UserGrammarProgress.cs",
@@ -655,7 +671,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "UserNote.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\Service2\\Models\\UserNote.cs",
               "RelativeDocumentMoniker": "Service2\\Models\\UserNote.cs",
@@ -667,7 +683,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "DictationQuestion.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\Service2\\Models\\DictationQuestion.cs",
               "RelativeDocumentMoniker": "Service2\\Models\\DictationQuestion.cs",
@@ -679,7 +695,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "Flashcard.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\Service2\\Models\\Flashcard.cs",
               "RelativeDocumentMoniker": "Service2\\Models\\Flashcard.cs",
@@ -691,7 +707,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "DictationController.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\Service2\\Controllers\\DictationController.cs",
               "RelativeDocumentMoniker": "Service2\\Controllers\\DictationController.cs",
@@ -703,7 +719,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 44,
               "Title": "Course.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\LoTriinhHoc\\Models\\Course.cs",
               "RelativeDocumentMoniker": "LoTriinhHoc\\Models\\Course.cs",
@@ -715,7 +731,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "Module.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\LoTriinhHoc\\Models\\Module.cs",
               "RelativeDocumentMoniker": "LoTriinhHoc\\Models\\Module.cs",
@@ -727,7 +743,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 43,
               "Title": "Lesson.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\LoTriinhHoc\\Models\\Lesson.cs",
               "RelativeDocumentMoniker": "LoTriinhHoc\\Models\\Lesson.cs",
@@ -739,7 +755,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 45,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\Service2\\Dockerfile",
               "RelativeDocumentMoniker": "Service2\\Dockerfile",
@@ -751,7 +767,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 46,
               "Title": "ReadingQuestion.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\Service2\\Models\\ReadingQuestion.cs",
               "RelativeDocumentMoniker": "Service2\\Models\\ReadingQuestion.cs",
@@ -763,7 +779,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 47,
               "Title": "LearningPlan.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\LoTriinhHoc\\Models\\LearningPlan.cs",
               "RelativeDocumentMoniker": "LoTriinhHoc\\Models\\LearningPlan.cs",
@@ -775,7 +791,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 48,
               "Title": "ExerciseTypeDto.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\LoTriinhHoc\\DTOs\\ExerciseTypeDto.cs",
               "RelativeDocumentMoniker": "LoTriinhHoc\\DTOs\\ExerciseTypeDto.cs",
@@ -787,7 +803,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 49,
               "Title": "LessonDto.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\LoTriinhHoc\\DTOs\\LessonDto.cs",
               "RelativeDocumentMoniker": "LoTriinhHoc\\DTOs\\LessonDto.cs",
@@ -819,7 +835,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "LoTriinhHoc.csproj",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\LoTriinhHoc\\LoTriinhHoc.csproj",
               "RelativeDocumentMoniker": "LoTriinhHoc\\LoTriinhHoc.csproj",
