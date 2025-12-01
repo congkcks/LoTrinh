@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4BFA802D-7714-4673-A56F-58FDCB09D778}|Service2\\Service2.csproj|c:\\users\\acer\\source\\repos\\lotriinhhoc\\service2\\data\\engacedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BFA802D-7714-4673-A56F-58FDCB09D778}|Service2\\Service2.csproj|solutionrelative:service2\\data\\engacedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{60D65D3A-11B1-4AAB-A28F-2A852307C081}|LoTriinhHoc\\LoTriinhHoc.csproj|c:\\users\\acer\\source\\repos\\lotriinhhoc\\lotriinhhoc\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{60D65D3A-11B1-4AAB-A28F-2A852307C081}|LoTriinhHoc\\LoTriinhHoc.csproj|solutionrelative:lotriinhhoc\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{60D65D3A-11B1-4AAB-A28F-2A852307C081}|LoTriinhHoc\\LoTriinhHoc.csproj|c:\\users\\acer\\source\\repos\\lotriinhhoc\\lotriinhhoc\\dtos\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{60D65D3A-11B1-4AAB-A28F-2A852307C081}|LoTriinhHoc\\LoTriinhHoc.csproj|solutionrelative:lotriinhhoc\\dtos\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BFA802D-7714-4673-A56F-58FDCB09D778}|Service2\\Service2.csproj|c:\\users\\acer\\source\\repos\\lotriinhhoc\\service2\\data\\engacedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BFA802D-7714-4673-A56F-58FDCB09D778}|Service2\\Service2.csproj|solutionrelative:service2\\data\\engacedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{60D65D3A-11B1-4AAB-A28F-2A852307C081}|LoTriinhHoc\\LoTriinhHoc.csproj|c:\\users\\acer\\source\\repos\\lotriinhhoc\\lotriinhhoc\\dtos\\exercisedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -214,7 +214,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -230,26 +230,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\LoTriinhHoc\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "LoTriinhHoc\\Controllers\\AuthController.cs",
               "ToolTip": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\LoTriinhHoc\\Controllers\\AuthController.cs",
               "RelativeToolTip": "LoTriinhHoc\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAgwDkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwC4AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-17T13:12:04.086Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "EngAceDbContext.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\Service2\\Data\\EngAceDbContext.cs",
               "RelativeDocumentMoniker": "Service2\\Data\\EngAceDbContext.cs",
               "ToolTip": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\Service2\\Data\\EngAceDbContext.cs",
               "RelativeToolTip": "Service2\\Data\\EngAceDbContext.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAA0wD0AAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAIwD0AAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-01T11:20:33.081Z",
               "EditorCaption": ""
@@ -312,8 +312,7 @@
               "RelativeToolTip": "LoTriinhHoc\\DTOs\\CourseDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T07:38:29.26Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-21T07:38:29.26Z"
             },
             {
               "$type": "Document",
@@ -325,12 +324,11 @@
               "RelativeToolTip": "LoTriinhHoc\\DTOs\\ExerciseDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T07:38:29.986Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-21T07:38:29.986Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "LoginRequest.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\LoTriinhHoc\\LoTriinhHoc\\DTOs\\LoginRequest.cs",
               "RelativeDocumentMoniker": "LoTriinhHoc\\DTOs\\LoginRequest.cs",

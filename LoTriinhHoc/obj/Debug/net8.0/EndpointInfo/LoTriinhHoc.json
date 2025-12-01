@@ -670,11 +670,7 @@
       "LoginRequest": {
         "type": "object",
         "properties": {
-          "username": {
-            "type": "string",
-            "nullable": true
-          },
-          "password": {
+          "email": {
             "type": "string",
             "nullable": true
           }

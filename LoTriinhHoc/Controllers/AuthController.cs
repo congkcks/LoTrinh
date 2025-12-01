@@ -38,20 +38,26 @@ public class AuthController : ControllerBase
     [HttpPost("login")]
     public async Task<IActionResult> Login(LoginRequest request)
     {
-        var user = await _db.Users
-            .FirstOrDefaultAsync(x => x.Username == request.Username);
+        if (string.IsNullOrWhiteSpace(request.Email))
+            return BadRequest("Email là bắt buộc!");
 
-        if (user == null || user.PasswordHash != request.Password)
-            return Unauthorized("Wrong username or password.");
+        var user = await _db.Users
+            .FirstOrDefaultAsync(x => x.Email == request.Email);
+
+        if (user == null)
+            return Unauthorized("Không tìm thấy tài khoản với email này.");
+
         return Ok(new
         {
-            message = "Login success",
+            message = "Đăng nhập thành công",
             user = new
             {
-                user.Id,
-                user.Username,
-                user.Email
+                id = user.Id,
+                email = user.Email,
+                username = user.Username
             }
         });
     }
+
+
 }
